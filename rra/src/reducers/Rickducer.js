@@ -20,7 +20,6 @@ export const Rickducer = (state=initialState, action) => {
 
         case GET_DATA:
         return{ ...state, isFetchingData: true};
+        default: return state;   
     };
-
-
 }

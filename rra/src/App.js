@@ -15,7 +15,10 @@ const store = createStore(reducer)
 // 2 - Add Shwifty Header
 // 3 - Import <RMForm/> 
 // 4 - Import Provider, CreateStore, Reducer
-// 5 - Const Store & Wrap App with Provider, Store, and Reducer 
+// 5 - Const Store & Wrap App with Provider, Store, and Reducer
+// 6 - Go back to RMForm and utilize connect, to sync Reducer, MapStateToProps, and Actions
+// This is fully set component using Form,Action,Reducer,Provider,CreateStore 
+// Now to Set up the axios see notes below Export Default App 
 function App() {
   return (
     <Provider store={store}>
