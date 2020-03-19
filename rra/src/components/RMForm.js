@@ -1,6 +1,6 @@
 //Pre-Imps
 import React from 'react';
-// Step 6 - Final Step before Axios hit 
+// Step 7 - Final Step before Axios hit 
 import {connect} from 'react-redux'; 
 import {getData} from '../actions';
 
@@ -8,7 +8,7 @@ const RMForm = props => {
 
     const handleChange = e => {e.preventDefault(); props.getData();};
 
-    // Step 6 Pt.2 - Changed Button to IsFetching - This step can be done right be done once you need to come back to MapStateToProps
+    // Step 7 Pt.2 - Changed Button to IsFetching - This step can be done right be done once you need to come back to MapStateToProps
     // originial was just button
     return (
         <>
@@ -17,7 +17,7 @@ const RMForm = props => {
     )
 };
 
-const mapStateToProps = state => {   // <- Part 6 Pt.3 - mapStateToProps 
+const mapStateToProps = state => {   // <- Part 7 Pt.3 - mapStateToProps 
     return{
       isFetchingData: state.isFetchingData
     };
