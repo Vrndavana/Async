@@ -22,7 +22,7 @@ export const getData = () => dispatch => { // Step 1 Pt.2 Added dispatch =>
     dispatch({ type: GET_DATA });         // Step 1 Pt.3 Replaced return w dispatch
     axios                                // Step 1 Pt.4 Make Axios - Const two new typs: UPDATE and ERROR (above)
         .get(`https://rickandmortyapi.com/api/character/`)
-        .then(res => {console.log(res); dispatch({type: UPDATE, payload: res.data})})
+        .then(res => {console.log('Results',res.data.results); dispatch({type: UPDATE, payload: res.data.results})})
         .catch(err => {
             console.error(`error fetching. err:`, err);
             dispatch({type: SET_ERROR, payload: 'error fetching'})

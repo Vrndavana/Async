@@ -32,7 +32,7 @@ function App() {
 
        <header>Do you know who is the Shwiftyiest?</header>
         <RMForm/>
-        {/* <List/> */}
+        <List/>
       </div>
 
     </Provider>
