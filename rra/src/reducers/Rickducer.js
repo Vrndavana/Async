@@ -1,13 +1,13 @@
 //Step 2 - Pt.1
-import {GET_DATA} from '../actions';
+import {GET_DATA, UPDATE, SET_ERROR} from '../actions'; // UPDATE, ERROR added Step 2 pt.2
 
-// Ports Ports Ports Ports 
+// Ports Ports Ports Ports (Focus on Step 1 ports come later)
 
 
 // The Start of code in Rickducer
 //Step 1
 const initialState = { // InitialState 
-    missions: [],  // The browser is showing no array
+    characters: [],  // The browser is showing no array
     isFetchingData: false, // fetching is false so only button displays
     error: ""
 };
@@ -20,7 +20,13 @@ export const Rickducer = (state=initialState, action) => {
 
         case GET_DATA:
         return{ ...state, isFetchingData: true};
+
+        case UPDATE:
+        return{ ...state, characters: action.payload, isFetchingData: false};
+
+        case SET_ERROR:
+        return{ ...state, isFetchingData: false, error: action.payload};
+
+        default: return state;   
     };
-
-
 }
