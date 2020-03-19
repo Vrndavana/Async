@@ -9,6 +9,8 @@ import {createStore, applyMiddleware} from 'redux'; // Step 6 Pt.2 Add applyMidd
 import {Rickducer as reducer} from './reducers/Rickducer';
 //Step 6 
 import thunk from 'redux-thunk';
+//Step 8 
+import List from './components/List';
 //Step 5
 const store = createStore(reducer, applyMiddleware(thunk)); // Step 6 Pt.3 Add Middleware w Thunk 
 
@@ -22,6 +24,7 @@ const store = createStore(reducer, applyMiddleware(thunk)); // Step 6 Pt.3 Add M
 // 7 - Go back to RMForm and utilize connect, to sync Reducer, MapStateToProps, and Actions
 // This is fully set component using Form,Action,Reducer,Provider,CreateStore 
 // Now to Set up the axios see notes below Export Default App 
+// 8 - Create and import List to receive characters
 function App() {
   return (
     <Provider store={store}>
@@ -29,6 +32,7 @@ function App() {
 
        <header>Do you know who is the Shwiftyiest?</header>
         <RMForm/>
+        {/* <List/> */}
       </div>
 
     </Provider>
