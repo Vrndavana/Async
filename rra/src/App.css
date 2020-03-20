@@ -38,3 +38,23 @@
     transform: rotate(360deg);
   }
 }
+
+.Shwifty{
+  color:rgb(5, 5, 5);
+  font-size:1.5rem;
+  border: 3px solid black;
+  background-color:white;
+  width: 20%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.Characters{
+  border: 3px solid black;
+  background-color: white;
+  width:40%;
+  margin: 0 auto;
+
+  
+
+}

@@ -30,7 +30,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
 
-       <header>Do you know who is the Shwiftyiest?</header>
+       <header className="Shwifty">Do you know who is the Shwiftyiest?</header>
         <RMForm/>
         <List/>
       </div>

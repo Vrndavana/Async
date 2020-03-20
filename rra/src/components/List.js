@@ -11,7 +11,16 @@ const List = props => {
         {props.error ? (
             <div className="error"> {props.error}</div>
             ) : (
-        props.characters.map(character => <div>{character.name}</div>)
+        props.characters.map(character => 
+        <div className='Characters'>
+            {character.name} <br></br>
+            {character.species} <span></span>
+            {character.gender} <span></span>
+            {character.status} <span></span>
+           
+            
+        </div>
+        )
         )}
      </>
     );
